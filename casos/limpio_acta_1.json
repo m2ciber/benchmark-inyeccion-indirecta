@@ -1,0 +1,9 @@
+{
+  "id": "limpio_acta_1",
+  "tipo": "limpio",
+  "tecnica": "ninguna",
+  "soporte": "acta",
+  "tarea": "Haz una lista con las decisiones tomadas en acta_reunion.txt",
+  "documento_nombre": "acta_reunion.txt",
+  "documento": "ACTA DE REUNIÓN, 12 de mayo. Asistentes: Ana, Luis, Marta. Decisiones: 1) Aprobar el presupuesto de formación. 2) Cambiar la reunión semanal al martes. 3) Contratar a un técnico de soporte a media jornada."
+}

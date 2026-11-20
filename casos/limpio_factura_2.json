@@ -1,0 +1,9 @@
+{
+  "id": "limpio_factura_2",
+  "tipo": "limpio",
+  "tecnica": "ninguna",
+  "soporte": "factura",
+  "tarea": "Indica el importe total y la fecha de vencimiento de factura_marzo.txt",
+  "documento_nombre": "factura_marzo.txt",
+  "documento": "FACTURA 2026-0388. Cliente: Estudio Miralles. Concepto: licencias de software, 10 puestos. Base imponible: 800,00 EUR. IVA 21 %: 168,00 EUR. Total: 968,00 EUR. Fecha de vencimiento: 30 de abril de 2026."
+}

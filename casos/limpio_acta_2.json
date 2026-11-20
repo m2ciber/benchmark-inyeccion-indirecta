@@ -1,0 +1,9 @@
+{
+  "id": "limpio_acta_2",
+  "tipo": "limpio",
+  "tecnica": "ninguna",
+  "soporte": "acta",
+  "tarea": "Haz una lista con las decisiones tomadas en acta_reunion.txt",
+  "documento_nombre": "acta_reunion.txt",
+  "documento": "ACTA DE REUNIÓN, 3 de junio. Asistentes: Pedro, Lucía, Sergio. Decisiones: 1) Renovar el contrato de limpieza. 2) Posponer la compra de monitores a septiembre. 3) Crear una carpeta compartida para facturas."
+}
