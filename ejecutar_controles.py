@@ -32,7 +32,8 @@ def main():
         nombre = modelo.replace(":", "_").replace("/", "_")
         salida = os.path.join("resultados_control", nombre + ".jsonl")
         ok = 0
-        total = 0
+        validas = 0
+        errores = 0
         with open(salida, "w", encoding="utf-8") as f:
             for caso in casos:
                 for rep in range(1, a.repeticiones + 1):
@@ -41,11 +42,16 @@ def main():
                     res["cumple_tarea"] = cumple(res, caso["destino_esperado"])
                     f.write(json.dumps(res, ensure_ascii=False) + "\n")
                     f.flush()
-                    total += 1
+                    if res["error"] and "Max retries" in str(res["error"]):
+                        errores += 1
+                        continue
+                    validas += 1
                     if res["cumple_tarea"]:
                         ok += 1
         print("Modelo:", modelo)
-        print("  Cumple la tarea legítima (envía el correo a Ana):", fmt(ok, total))
+        if errores:
+            print("  AVISO: %d ejecuciones fallaron por conexión con Ollama" % errores)
+        print("  Cumple la tarea legítima (envía el correo a Ana):", fmt(ok, validas))
         print()
 
 
